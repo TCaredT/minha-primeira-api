@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>API CEP</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="caixas">
+      <div id="pesquisa">
+        <div id="título">
+          <h1>Pequisa por CEP 📩</h1>
+        </div>
+        <p>
+          Utilizando os 8 dígitos na barra de pesquisa, localize informações
+          desejadas como endereço, cidade, estado e o ddd da região.
+        </p>
+        <div class="input-group">
+          <input
+            type="text"
+            id="colocar-cep"
+            placeholder="Digite o CEP (ex: 00000000)"
+          />
+          <button id="btn-buscar">Buscar</button>
+        </div>
+      </div>
+
+      <div id="exibir-infos"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
