@@ -7,12 +7,13 @@ botao_buscar.addEventListener("click", pesquisarCep);
 function pesquisarCep() {
   const cep = input.value.trim();
   if (cep === "") {
+    infos.style.display = "block";
     infos.innerHTML = "Nenhum CEP digitado, tente outra vez.";
     return;
   }
   /*pra validar se tem mesmo 8 números */
   if (cep.length !== 8 || isNaN(cep)) {
-    // Validação básica do CEP
+    infos.style.display = "block";
     infos.innerHTML = "CEP inválido! Digite 8 números.";
     return;
   }
